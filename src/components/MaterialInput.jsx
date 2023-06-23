@@ -56,7 +56,7 @@ function MaterialInput({ title, materialName, statsSetter }){
                     <input type="number" name="DEF" min="0" max="9999" defaultValue="0"/>
                 </label>
             </form>
-            <CalculateNewStats materialStatsByLevel={statsByLevel}/>
+            <CalculateNewStats materialStatsByLevel={statsByLevel} materialName={materialName}/>
         </>
     );
 

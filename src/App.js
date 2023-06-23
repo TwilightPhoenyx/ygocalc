@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import MaterialInput from "./components/MaterialInput";
+import FusionStats from "./components/FusionStats";
 
 const MyContext = createContext();
 
@@ -24,6 +25,7 @@ function App() {
             materialName="material2" 
             statsSetter={setStatsByLvMaterial2} 
           />
+          <FusionStats/>
         </main>
       </MyContext.Provider>
       
