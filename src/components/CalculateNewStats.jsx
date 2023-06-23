@@ -7,13 +7,6 @@ function CalculateNewStats({materialStatsByLevel, materialName}){
 
     const [ statTransferType, setStatTransferType ] = useState(materialName+"-neutral")
 
-    useEffect(
-      ()=>{
-        console.log(statTransferType);
-      },
-      [statTransferType]
-    )
-
     function handlerAddToStats(){
       const newFusionStats = {...fusionStats}
       const level = newFusionStats.level + 1
